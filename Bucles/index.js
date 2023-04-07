@@ -9,6 +9,7 @@ function programa1(){
 }
 }
 
+
 /* N°2 | Realizar un programa que permita el ingreso de números los cuales se tienen que ir
 acumulando. El ingreso de datos terminará cuando el usuario ingrese un valor 0. */
 
