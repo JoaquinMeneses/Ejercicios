@@ -247,3 +247,18 @@ function programa15() {
 
 /* N°16 | Dado un array de 10 números desordenados, realizar un programa que imprima por pantalla el array
 ordenado. (NO USAR SORT, solo ciclos FOR) */
+
+function programa16() {
+    let programa = document.getElementById("programa");
+    const array = [5, 3, 7, 1, 9, 2, 4, 10, 6, 8];
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[i] > array[j]) {
+            let plantilla = array[i];
+            array[i] = array[j];
+            array[j] = plantilla;
+            }
+        }
+    }
+    programa.innerHTML += `<p>Array ordenado: ${array}</p>`;
+}
